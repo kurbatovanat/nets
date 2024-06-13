@@ -1,0 +1,28 @@
+можно использовать для диагностики инфраструктуры системы доменных имен (DNS). 
+
+Средство командной строки nslookup доступно только в том случае, если установлен протокол TCP/IP.
+
+
+Результат работы:
+
+$
+~ $ nslookup
+> ls
+The 'ls' command is not implemented.
+> set all
+Default server: 8.8.8.8
+Address: 8.8.8.8#53
+Default server: 8.8.4.4
+Address: 8.8.4.4#53
+
+Set options:
+  novc                  nodebug         nod2
+  search                recurse
+  timeout = 0           retry = 3       port = 53       ndots = 1
+  querytype = A         class = IN
+  srchlist =
+> exit
+
+~ $
+~ $
+~ $
